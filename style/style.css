@@ -38,7 +38,7 @@ body {
     background-color: black;
 }
 
-.buttons button {
+button {
     flex: 1 0 25%;
     height: calc(100 / 4);
     border-radius: 5px;
@@ -49,36 +49,36 @@ body {
     font-weight: bold;
 }
 
-.buttons button:hover {
+button:hover {
     background-color: lightgray;
 }
 
-.buttons button:active {
+button:active {
     background-color: #f5f5f5;
 }
 
-#operations {
+.operations {
     background-color: white;
     color: black;
 }
 
-#operations:hover {
+.operations:hover {
     background-color: lightgray;
 }
 
-#operations:active {
+.operations:active {
     background-color: grey;
 }
 
-#special {
+.special {
     background-color: orange;
 }
 
-#special:hover {
+.special:hover {
     background-color: #FFD580;
 }
 
-#special:active {
+.special:active {
     background-color: #FFE5B4;
 }
 
