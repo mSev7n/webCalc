@@ -17,21 +17,16 @@ body {
 #display {
     width: 100%;
     height:70px;
-    display: flex;
-    align-items: end;
-    justify-content: end;
-    flex-wrap: wrap;
-    padding: 5px;
+    padding: 10px;
     box-sizing: border-box;
-    border-bottom: 1px solid black;
     border-radius: 10px;
     background-color: darkgray;
     color: white;
     font-weight: 700;
-    text-align: left;
+    text-align: right;
     font-size: 50px;
     overflow: hidden;
-    text-overflow: clip;
+    text-overflow: ellipsis;
     white-space: nowrap;
 }
 
@@ -53,3 +48,37 @@ body {
     font-size: large;
     font-weight: bold;
 }
+
+.buttons button:hover {
+    background-color: lightgray;
+}
+
+.buttons button:active {
+    background-color: #f5f5f5;
+}
+
+#operations {
+    background-color: white;
+    color: black;
+}
+
+#operations:hover {
+    background-color: lightgray;
+}
+
+#operations:active {
+    background-color: grey;
+}
+
+#special {
+    background-color: orange;
+}
+
+#special:hover {
+    background-color: #FFD580;
+}
+
+#special:active {
+    background-color: #FFE5B4;
+}
+
