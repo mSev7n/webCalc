@@ -38,28 +38,36 @@ const buttons = document.querySelectorAll(".digits");
 
 const allButtons = document.querySelectorAll(".operations");
 
+//to display on screen
 buttons.forEach(button => {
     button.addEventListener("click", () => {
+        //to clear display
         if (shouldClearDisplay) {
             displayContent = "";
             display.textContent = displayContent;
         }
+        //to append to display
         display.textContent += button.textContent;
         displayContent = display.textContent;
 
     })
 });
 
+// to get a, b, and operator 
 allButtons.forEach(button => {
     button.addEventListener("click", () => {
         const value = button.textContent;
         displayContent = parseFloat(display.textContent);
 
+        //check if a is empty ...if yes...give a the display value
             if (a === null) {
                 a = displayContent;
                 operator = value;
                 shouldClearDisplay = true;
             }
+
+            //check if operator was clicked and if b is empty...then gives b the current display value 
+            //and then calls the operate function and assign return value to a 
             else if (operator && b === null) {
                 b = displayContent;
                 a = operate(a, b, operator);
@@ -68,6 +76,8 @@ allButtons.forEach(button => {
                 operator = value;
                 shouldClearDisplay = true;
             }
+
+            //checks is only operator was clicked
             else {
                 operator = value;
             }
